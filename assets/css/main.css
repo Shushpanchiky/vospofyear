@@ -2155,7 +2155,9 @@ input, select, textarea {
 	}
 
 		ol li {
+
 			padding-left: 0.25em;
+
 		}
 
 	ul {
@@ -2166,6 +2168,8 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			list-style: none;
+			align-right: 1em;
 		}
 
 		ul.alt {
@@ -2681,26 +2685,26 @@ input, select, textarea {
 			}
 
 /* Main */
-	
+
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
-		
+
 	}
-		
+
 		#main > section {
 			border-top: solid 2px #efefef;
 			margin: 8em 0 0 0;
 			padding: 8em 0 0 0;
-			
+
 		}
-		#main > section > div1 {		  
+		#main > section > div1 {
 			  color: rgba(245, 52, 102, 0.7);
 			  text-align: left;
 			}
-		#main > section > div2 {			  
+		#main > section > div2 {
 			  color: rgba(245, 52, 102, 0.7);
 			  text-align: right !important;
 			}
@@ -3018,8 +3022,8 @@ input, select, textarea {
 					#header h1 br {
 						display: none;
 					}
-				
-				
+
+
 				}
 				#header > .inner {
 					margin-bottom: 0;
@@ -3191,9 +3195,9 @@ input, select, textarea {
 				#main > section {
 					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
-				
+
 				}
-				
+
 
 		/* Poptrox */
 
@@ -3250,12 +3254,12 @@ rubic {
   font-size: 20px;
   font-color: #fdfefd;
   text-align: center;
-	
-overflow-wrap: normal;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+
+overflow-wrap: normal;  /* не поддерживает IE, Firefox; является копией word-wrap */
   word-wrap: normal;
-  word-break: normal;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */ 
-  line-break: auto;  /* нет поддержки для русского языка */ 
-  hyphens: manual;  /* значение auto не поддерживается Chrome */ 
+  word-break: normal;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+  line-break: auto;  /* нет поддержки для русского языка */
+  hyphens: manual;  /* значение auto не поддерживается Chrome */
   }
 .note{
  font-size: 20px;
@@ -3263,12 +3267,12 @@ overflow-wrap: normal;  /* не поддерживает IE, Firefox; являе
   color: #fdfefd!importat;
   opacity: 1.0!important;
   text-align: center;
-	
-overflow-wrap: normal;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+
+overflow-wrap: normal;  /* не поддерживает IE, Firefox; является копией word-wrap */
   word-wrap: normal;
-  word-break: normal;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */ 
-  line-break: auto;  /* нет поддержки для русского языка */ 
-  hyphens: manual;  /* значение auto не поддерживается Chrome */ 
+  word-break: normal;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+  line-break: auto;  /* нет поддержки для русского языка */
+  hyphens: manual;  /* значение auto не поддерживается Chrome */
  }
 
 
@@ -3287,10 +3291,10 @@ overflow-wrap: normal;  /* не поддерживает IE, Firefox; являе
     border: 2px dotted white;
     }
     .container:before {
-      transform: rotateX(90deg);  
+      transform: rotateX(90deg);
       }
     .container:after {
-      transform: rotatey(90deg);  
+      transform: rotatey(90deg);
       }
 
 .side {
@@ -3347,4 +3351,3 @@ rubic {
   justify-content: center;
   align-items: center;
 }
-
