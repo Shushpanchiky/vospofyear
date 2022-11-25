@@ -60,12 +60,12 @@ mark {
 	color: inherit;
 }
 
-input::-moz-focus-inner {
+input::-moz-focus-inner, button:: -moz-focus-inner{
 	border: 0;
 	padding: 0;
 }
 
-input, select, textarea {
+input, select, textarea, button {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -124,7 +124,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 1);
 	}
 
-	body, input, select, textarea {
+	body, input, select, textarea, button {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -133,7 +133,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, button {
 				font-size: 14pt;
 			}
 
@@ -157,7 +157,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 360px) {
 
-			body, input, select, textarea {
+			body, input, select, textarea, button {
 				font-size: 11pt;
 			}
 
@@ -310,7 +310,7 @@ input, select, textarea {
 		text-align: right;
 	}
 
-	input, select, textarea {
+	input, select, textarea, button {
 		color: #ffffff;
 	}
 
