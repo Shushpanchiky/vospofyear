@@ -121,7 +121,7 @@ input, select, textarea {
 
 	body {
 		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		color: rgba(255, 255, 255, 1);
 	}
 
 	body, input, select, textarea {
@@ -138,6 +138,14 @@ input, select, textarea {
 			}
 
 		}
+
+		red{
+			color: rgba(207,75,110,1);
+		}
+
+		acsent{
+			font-family: "Impact", Helvetica, sans-serif;
+	}
 
 		@media screen and (max-width: 1280px) {
 
@@ -3277,6 +3285,7 @@ input, select, textarea {
 				margin: 0 0.35em;
 				padding: 0;
 				vertical-align: middle;
+
 			}
 
 				#nav ul li a {
@@ -3973,3 +3982,22 @@ input, select, textarea {
 					header.major h2:after {
 						background-color: rgba(255, 255, 255, 0.35);
 					}
+
+					button[type="submit"].login{
+	float:right;
+	width: 200px;
+	height: 37px;
+	-moz-border-radius: 19px;
+	-webkit-border-radius: 19px;
+	border-radius: 19px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #55b1df;
+	border:1px solid #55b1df;
+	border:none;
+	color: #fff;
+	font-weight: bold;
+}
+button[type="submit"].login:hover{background-color: #fff; border:1px solid #55b1df; color:#55b1df; cursor:pointer;}
+button[type="submit"].login:focus{outline: none;}
