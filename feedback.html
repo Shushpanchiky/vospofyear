@@ -102,6 +102,7 @@
 			 body: new FormData(document.getElementById("sheetdb-form")),})
 			 .then(response => json())
 			 .then((html)=> {
+			window.open('index.html','_blank');
 			 alert("Спасибо за сообщение!")
   });
 });
