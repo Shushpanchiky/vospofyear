@@ -48,11 +48,11 @@
 										<p>Спасибо, что помогаете мне стать лучше! Пожалуйста, оставьте свое сообщение, чтобы я могла принять его во внимание</p>
 										<div class="row">
 											<div class="col-8 col-12-small">
-												<form name="submit-to-google-sheet" id="submit-to-google-sheet" method="post">
+												<form name="submit-to-google-sheet" id="sheetdb-form" method="post" action="https://sheetdb.io/api/v1/np721nvqk2t8w">
 													<div class="row gtr-uniform gtr-50">
-														<div class="col-12 col-12-xsmall"><input type="text" name="name" id="name" placeholder="ФИО" /></div>
-														<div class="col-12 col-12-xsmall"><input type="text" name="email" id="email" placeholder="Email или телефон" /></div>
-														<div class="col-12"><textarea name="message" id="message" placeholder="Сообщение" rows="4"></textarea></div>
+														<div class="col-12 col-12-xsmall"><input type="text" name="data[name]" id="name" placeholder="ФИО" /></div>
+														<div class="col-12 col-12-xsmall"><input type="text" name="data[email]" id="email" placeholder="Email или телефон" /></div>
+														<div class="col-12"><textarea name="message" id="data[message]" placeholder="Сообщение" rows="4"></textarea></div>
 													</div>
 
 												<ul class="actions">
@@ -93,16 +93,17 @@
 
 
 <script>
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbyg8Bo8liQ6xqxnFsxAF43WCcGb4eyvrmd-Q3-WmnyqcPyu-i6AuIKtFm_jDGZSmE3g/exec'
 
-	 const form = document.forms['submit-to-google-sheet']
-
+	const form = document.getElementById('sheetdb-form');
   form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-	alert("Спасибо за сообщение!")
-  })
+    e.preventDefault();
+    fetch(form.action,{
+			 method: 'POST',
+			 body: new FormData(document.getElementById("sheetdb-form")),})
+			 .then(response => json())
+			 .then((html)=> {
+			 alert("Спасибо за сообщение!")
+  });
+});
 </script>
 </html>
