@@ -3235,6 +3235,11 @@ input, select, textarea, button {
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+
+		background-image: -moz-linear-gradient(90deg, #7F7FD5, #86A8E7, #91EAE4);
+		background-image: -webkit-linear-gradient(90deg, #7F7FD5, #86A8E7, #91EAE4);
+		background-image: -ms-linear-gradient(90deg, #7F7FD5, #86A8E7, #91EAE4);
+		background-image: linear-gradient(90deg, #7F7FD5, #86A8E7, #91EAE4);
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3285,6 +3290,7 @@ input, select, textarea, button {
 				margin: 0 0.35em;
 				padding: 0;
 				vertical-align: middle;
+				box-shadow:0 0 20px #555;
 
 			}
 
@@ -3307,7 +3313,7 @@ input, select, textarea, button {
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: #ABE9CD;
 						box-shadow: none;
 					}
 
@@ -3891,7 +3897,7 @@ input, select, textarea, button {
 
 				@keyframes rotate {
 				  100% {
-				    transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+				    transform: rotatex(360deg) rotateY(360deg) rotateZ(500deg);
 				  }
 				}
 
